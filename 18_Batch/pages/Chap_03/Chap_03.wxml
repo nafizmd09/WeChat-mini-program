@@ -1,0 +1,73 @@
+<!--pages/Chap_03/Chap_03.wxml-->
+<text>pages/Chap_03/Chap_03.wxml</text>
+<text style="background:#00FF00">\nChapter 03-LOGIC LAYER~~Button & setData:\n\n</text>
+<button bindtap="tap">Click</button>
+<view bindtap="changeDate">{{today}}</view>
+<text>--------------------------------------------------------</text>
+<text style="background:cyan">\nChapter 03-VIEW LAYER(02)-[Page 44-113]\n</text>
+<text style="background:cyan">\nChapter 03-Data Binding:\n</text>
+<text style="background:#AFB83B">(1) Simple binding</text>
+<text>{{msg1}}{{msg2}}</text>
+<view>{{msg1}}{{msg2}}</view>
+
+<text style="background:#AFB83B">\n(2) Property binding</text>
+<view id='{{id}}'>Test</view>
+
+<text style="background:#AFB83B">\n(3) Control property binding</text>
+<view wx:if="{{condition}}">Test</view>
+
+<view hidden="{{result?true:false}}">The component will be hidden</view>
+
+<text style="background:#AFB83B">\n(4) Keyword binding</text>
+<view wx:if='{{false}}'>Test1</view>
+<view wx:if='{{true}}'>Test2</view>
+
+<text style="background:#AFB83B">\n(5) Operation binding</text>
+<view hidden='{{result ? true : false}}'> The component will be hidden </view>
+<view> {{a + b}} + {{c}} + d </view>
+<view wx:if="{{x > 5}}"> The component will be displayed </view> <!--Logical judgment example code-->
+<view> {{'Hello '+name}}</view>
+<view>{{object.key1}} {{array[1]}}</view> <!-- The result displayed is ：Hello 2020-->
+
+<text style="background:#AFB83B">\n(6) Combination binding\n</text>
+<!--
+<view wx:for='{{[1,2,x,4]}}'>{{item}}</view>
+<template is="test" data="{{username: value1, password: value2}}"></template>
+<template is= "test" data="{{...student, gender: 2}}"></template>
+<template is="test" data="{{x, y}}"></template> <!--{{x:x, y:y}} short form -->
+<template is="test" data="{{...obj, y, z :3}}"></template>
+-->
+
+
+<view wx:for='{{array}}'>学生{{index}}：{{item}}</view>
+
+<template is='simplTemp' data ='{{...student}}'> </template>
+<text>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</text>
+<view wx:for="{{array2}}">Student {{index}}: {{item}}</view>
+
+<view wx:for="array">Student {{index}}: {{item}}</view>
+<text>weweeeweeweew</text>
+<block wx:for="{{['Computer','JXUST','Uddin']}}">
+  <view>stuID: {{index}}</view>
+  <view>Name: {{item}}</view>
+</block>
+
+<template name = 'simplTemp'>
+  <text>Name : {{name}}</text>
+  <text>Age: {{age}}</text>
+</template>
+<button bindtap="myTap" data-test="hello">Button component</button>
+
+<text>\n===============================================</text>
+<text style="background:#00FF00">\nChapter 03-VIEW LAYER~~6.Quote:\n\n</text>
+
+<template name="tmpl01">
+ <text>{{text}}</text>
+ </template>
+ <import src="tmpl.wxml"/>
+ <template is="tmpl01" data="{{text: 'Nafiz'}}"/>
+
+ <!--Chap_03.wxml-->
+ <template name="A">
+ <text> A page template</text>
+ </template>

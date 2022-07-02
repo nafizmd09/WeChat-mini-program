@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/3_BasicContent/3_BasicContent",
+    "pages/4_FormContent/4_FormContent",
+    "pages/5_Navigation/5_Navigation",
+    "pages/6_Media_Component/6_Media_Component",
+    "pages/7_Map_Component/7_Map_Component"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "View container"
+      },
+
+      {
+        "pagePath": "pages/3_BasicContent/3_BasicContent",
+        "text": "Basic Content"
+      },
+
+      {
+        "pagePath": "pages/4_FormContent/4_FormContent",
+        "text": "Form Component"
+      },
+      {
+        "pagePath": "pages/6_Media_Component/6_Media_Component",
+        "text": "Media Component"
+      },
+      {
+        "pagePath": "pages/7_Map_Component/7_Map_Component",
+        "text": "Map Component"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

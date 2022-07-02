@@ -1,0 +1,8 @@
+<view class="title">Image management</view>
+<view class="demo-box">
+  <button bindtap="chooseImage">Choose a picture</button>
+  <image src="{{src}}" mode="widefix"></image>
+  <button type="primary" size="mini" bindtap="previewImage">Preview a picture</button>
+  <button type="primary" size="mini" bindtap="getImageInfo">Get info of a picture</button>
+  <button type="primary" size="mini" bindtap="saveImage">Save a picture</button>
+</view>

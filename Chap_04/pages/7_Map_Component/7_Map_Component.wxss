@@ -1,0 +1,5 @@
+/* pages/7_Map_Component/7_Map_Component.wxss */
+map{
+  width: 100%;
+  height: 1200rpx;
+}

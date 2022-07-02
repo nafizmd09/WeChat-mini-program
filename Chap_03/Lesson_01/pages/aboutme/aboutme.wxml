@@ -1,0 +1,6 @@
+<!--pages/aboutme/aboutme.wxml-->
+<text>pages/aboutme/aboutme.wxml</text>
+<text>\n\n</text>
+<view>{{msg1}}{{msg2}}</view>
+<text>\n\n</text>
+<button bindtap='butTap'style="background:#AFB83B;">Click-Uddin</button>

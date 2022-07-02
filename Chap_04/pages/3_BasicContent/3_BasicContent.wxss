@@ -1,0 +1,20 @@
+text{
+    margin: 15rpx;
+    padding: 15rpx;
+    border: 1rpx solid red;
+    display: block;
+    font-size: 10pt;
+}
+.title{
+    margin: 15rpx;
+    padding: 15rpx;
+    border: 3rpx solid green;
+    display: block;
+    font-size: 30pt;
+}
+.myStyle{
+    color: greenyellow;
+    line-height: 60px;
+    font-weight: bold;
+
+}

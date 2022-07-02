@@ -1,0 +1,80 @@
+<!--pages/3_BasicContent/3_BasicContent.wxml-->
+<text>pages/3_BasicContent/3_BasicContent.wxml</text>
+<!--pages/cover/cover.wxml-->
+
+<!-- <icon type="warn" size="40" color="red"></icon>
+<view>
+    <block wx:for="{{iconColor}}">
+        <icon type="info" color="{{item}}"></icon>
+    </block>
+</view> -->
+
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+
+<view class="title">Icon application</view>
+<text>\n\n</text>
+<view class="demo-box">
+    <view class="title">(1) Content change</view>
+    <block wx:for="{{iconType}}">
+        <icon type="{{item}}" size="45"/>
+    </block>
+    <view class="title"> <text>\n</text>(2) Color change</view>
+<block wx:for="{{iconColor}}">
+    <icon type="success" color="{{item}}" size="50"/>
+    
+</block>
+<view class="title"> <text>\n</text>(3) Size changing</view>
+<block wx:for="{{iconSize}}">
+    <icon type ='download' size="{{item}}" color="red"/>
+</block>
+</view>
+
+
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+
+
+<!-- <text selectable="false"> This is test text</text>
+<view class="title">Text application</view>
+<view class="demo-box">
+    <view class="title">(1)selectable text</view>
+    <text selectable>This part contains selectable text </text>
+    <view class="title">(2) space forms</view>
+    <text>Space            is not allowed</text>
+    <text space="ensp">Space    takes half size of chinese characters</text>
+    <text space="emsp">Space    takes the size of chinese characters</text>
+    <text space="nbsp">Space    takes the sizes according to the font</text>
+    
+    <view class="title">(3) Text decode</view>
+    <text>&nbsp;&lt;&gt;&amp;&ensp;&emsp; are not decoded</text>
+    <text decode>&nbsp;&lt;&gt;&amp;&ensp;&emsp; are not decoded</text>
+</view>
+<rich-text nodes="{{nodes}}"></rich-text>
+<view class="title">rich-text application</view>
+<view class="demo-box">
+    <view class="title">(1) element node(use style)</view>
+    <rich-text nodes="{{nodes1}}"></rich-text>
+    <view class="title">(2) element node(use class)</view>
+    <rich-text nodes="{{nodes2}}"></rich-text>
+    <view class="title">(3) text node(use class)</view>
+    <rich-text nodes="{{nodes3}}"></rich-text>
+</view> -->
+
+<view></view>
+
+
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+
+
+<view class="title">Progess application</view>
+<view class="demo-box">
+    <view class="title">(1) Progess bar on the right</view>
+    <progress percent="20" show-info />
+    <view class="title">(2) Width 20</view>
+    <progress percent="50" stroke-width="20" />
+    <view class="title">(3) Customed color</view>
+    <progress percent="80" activeColor="red" />
+    <view class="title">(4) With animation</view>
+    <progress percent="100" active />
+</view>
+
+

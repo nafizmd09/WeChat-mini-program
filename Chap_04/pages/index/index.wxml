@@ -1,0 +1,97 @@
+<text style="color: red; size: 9000px;">       VIEW CONTAINER</text>
+
+<view class="title">1. view container</view>
+<view class="demo-box">
+<view class="title">(1) Not to stop view_hover of parent container</view>
+<view style="color:#FF0000">After click Son container, full body will be red color</view>
+<view class="view_parent" hover-class="view_hover">
+parent container view 
+<view class="view_son" hover-class="view_hover">
+Son container view\nUddin
+</view>
+</view>
+</view>
+<view>*************************************************</view>
+<view class="demo-box">
+<view class="title">(2) To stop view_hover of parent container</view>
+<view style="color:hotpink">After click Son container, just this container will be red color</view>
+<view class="view_parent" hover-class="view_hover">
+parent container view 
+<view class="view_son" hover-class="view_hover" hover-stop-propagation>
+Son container view\nNafiz Md Imtiaz Uddin
+</view>
+</view>
+</view>
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+<view class="title">2.View Container scroll view</view>
+<text>\n\n</text>
+<view class="title">(1) Scroll vertically</view>
+<view class="demo-box">
+    <scroll-view scroll-y>
+    <view class="scroll-item-y">Uddin 1</view>
+    <view class="scroll-item-y">Uddin 2</view>
+    <view class="scroll-item-y">Uddin 3</view>
+</scroll-view>
+</view>
+<view class="demo-box">
+<text>\n\n</text>
+<view class="title">(2) Scroll Horizontally</view>
+    <scroll-view scroll-x>
+    <view class="scroll-item-x">Uddin 1</view>
+    <view class="scroll-item-x">Uddin 2</view>
+    <view class="scroll-item-x">Uddin 3</view>
+</scroll-view>
+</view>
+
+<text>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</text>
+<view class="title">3. </view>
+<view class="title">View with characters</view>
+<view class="demo-box">
+    <swiper indicator dots autoplay interval="0000" duration="3000">
+    <swiper-item>
+        <view class="swiper-item">Uddin 01</view>
+    </swiper-item>
+    <swiper-item>
+        <view class="swiper-item">Uddin 02</view>
+    </swiper-item>
+    <swiper-item>
+        <view class="swiper-item">Uddin 03</view>
+    </swiper-item>
+    </swiper>
+   
+</view>
+
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+
+
+
+<view class ="title">4.View container movable view</view>
+<view class="demo-box">
+    <text>\n\n</text>
+<view class="title">(1)movable view in movable area</view>
+<movable-area>
+    <movable-view id="mv01" direction="all"></movable-view>
+</movable-area>
+<text>\n</text>
+<view class="title">(2)movable view outside  movable area</view>
+<movable-area>
+    <movable-view id="mv02" direction="all"></movable-view>
+</movable-area>
+<text>\n</text>
+<view class="title">(3)Scale movable view</view>
+<movable-area scale-area>
+    <movable-view id="mv03" direction="all" scale></movable-view>
+</movable-area>
+</view>
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+<view class="title">5.View Container cover view</view>
+<view class="demo-box">
+<view class="title">put cover </view>
+<map>
+    <cover-view>
+        <cover-view>cover-view</cover-view>
+         <cover-image src="/images/_home_icon.png"></cover-image>
+        <button type="primary" size="mini">This is a button</button>
+    </cover-view>
+</map>
+</view>

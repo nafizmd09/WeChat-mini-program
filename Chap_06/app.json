@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/1_Image/1_Image",
+    "pages/2_Record/2_Record",
+    "pages/3_Audio/3_Audio",
+    "pages/4_Video/4_Video",
+    "pages/5_Camera/5_Camera"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+"tabBar": {
+  "list": [
+    {
+      "pagePath": "pages/1_Image/1_Image",
+      "text": "IMAGE"
+    },
+    {
+      "pagePath": "pages/2_Record/2_Record",
+      "text": "RECORD"
+    },
+    {
+      "pagePath": "pages/3_Audio/3_Audio",
+      "text": "AUDIO"
+    },
+    {
+      "pagePath": "pages/4_Video/4_Video",
+      "text": "VIDEO"
+    },
+    {
+      "pagePath": "pages/5_Camera/5_Camera",
+      "text": "CAMERA"
+  }
+]
+},
+
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

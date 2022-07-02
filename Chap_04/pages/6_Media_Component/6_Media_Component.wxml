@@ -1,0 +1,50 @@
+<view class="title">(1) Audio application</view>
+<view class="demo-box">
+  <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+  <button type="mini" bindtap="audioPlay">Play</button>
+  <button type="mini" bindtap="audioPause">Pause</button>
+  <button type="mini" bindtap="audioSeek0">Back to Start</button>
+  <!-- <button type="mini" bindtap="audioStart">Start</button> -->
+</view>
+
+<view class="title">(2) Image application</view>
+<view class="demo-box">
+  <view class="title">(i) Zooming mode: scalToFill</view>
+  <image src="{{srcImage}}" mode="scaleToFill"></image>
+
+  <view class="title">(ii) Zooming mode: aspectFit</view>
+  <image src="{{srcImage}}" mode="aspectFit"></image>
+
+  <view class="title">(iii) Zooming mode: aspectFill</view>
+  <image src="{{srcImage}}" mode="aspectFill"></image>
+
+  <view class="title">(iv) Zooming mode: widthFix</view>
+  <image src="{{srcImage}}" mode="widthFix"></image>
+
+  <view class="title">(v) Cropping mode: top</view>
+  <image src="{{srcImage}}" mode="top"></image>
+
+  <view class="title">(vi) Cropping mode: bottom</view>
+  <image src="{{srcImage}}" mode="bottom"></image>
+
+  <view class="title">(vii) Cropping mode: center</view>
+  <image src="{{srcImage}}" mode="center"></image>
+
+  <view class="title">(viii) Cropping mode: left</view>
+  <image src="{{srcImage}}" mode="left"></image>
+
+  <view class="title">(ix) Cropping mode: right</view>
+  <image src="{{srcImage}}" mode="right"></image>
+
+  <view class="title">(x) Cropping mode: top left</view>
+  <image src="{{srcImage}}" mode="top left"></image>
+
+  <view class="title">(xi) Cropping mode: top right</view>
+  <image src="{{srcImage}}" mode="top right"></image>
+
+  <view class="title">(xii) Cropping mode: bottom right</view>
+  <image src="{{srcImage}}" mode="bottom right"></image>
+
+  <view class="title">(xiii) Cropping mode: bottom right</view>
+  <image src="{{srcImage}}" mode="bottom right"></image>
+</view>

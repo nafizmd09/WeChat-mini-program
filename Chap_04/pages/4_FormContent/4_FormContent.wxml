@@ -1,0 +1,210 @@
+
+
+<button size="default">normal button</button>
+<button size="mini">mini button</button>
+
+<view class="title">Button application</view>
+<view class="demo-box">
+    <view class="title">(1) mini buttons</view>
+    <button type='primary' size="mini">primary button</button>
+    <button type='default' size="mini">second button </button>
+    <button type='warn' size="mini">warn button </button>
+
+    <view class="title">(2) button state</view>
+    <button>Normal button</button>
+    <button disabled>Disabled button</button>
+    <button loading>Loading button</button>
+
+    <view class="title">(3) button listening</view>
+    <button type="primary" bindgetuserinfo="getUserDetail" open-type="getUserInfo"></button>
+</view>
+
+
+<button form-type='submit'>submit button</button>
+<button form-type='reset'>reset button</button>
+
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+
+<checkbox-group>
+  <checkbox value='apple' checked />Apple
+  <checkbox value='banana' disabled />Banana
+  <checkbox value='ganana' />Ganana
+  <checkbox value='lemon' />Lemon
+</checkbox-group>
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+<view class="title"> Checkbox application [JS file]</view>
+<view class="demo-box">
+    <checkbox-group bindchange="checkboxchange">
+        <view wx:for="{{checkboxitems}}" wx:key="item{{index}}">
+            <checkbox value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+        </view>
+    </checkbox-group>
+</view>
+
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+<view class="title">Input application [JS file]</view>
+<view class="demo-box" style="color: blue;">
+    <view class="title">(1)Password input</view>
+    <input password placeholder="Please enter password"/>
+    <view class="title">(2)Maximum 10 characters</view>
+    <input type="text" maxlength="10" placeholder="Here can be typed most 10 characters"/>
+    <view class="title">(3)Disabled input</view>
+    <input disabled placeholder="This input box is disabled"/>
+    <view class="title">(4) Customized placeholder style</view>
+    <input placeholder-style='color:red;font-weight:bold'placeholder='Customized style'/>
+    <view class="title">(5)Input box event handler</view>
+    <input bindinput="getInput" bindblur="getBlur" placeholder="This content can be handled"/>
+</view>
+
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+
+<view class="title" style="color: greenyellow;">Label application</view>
+<view class="demo-box" >
+    <view class="title">(1) Use for to bind id</view>
+    <checkbox-group>
+        <checkbox id='apple' value='apple' checked /> 
+        <label for='apple'>Apple</label>
+        <checkbox id='grape' value='grape' /> 
+        <label for='grape'>Grape</label>
+        <checkbox id='lemon' value='lemon' /> 
+        <label for='lemon'>Lemon</label>
+    </checkbox-group>
+    <view class="title">(2) In label directly</view>
+    <checkbox-group>
+        <label>
+            <checkbox value="apple" />Apple
+        </label>
+        <label>
+            <checkbox value="grape" />Grape
+        </label>
+        <label>
+            <checkbox value="lemon" />Lemon
+        </label>
+    </checkbox-group>
+
+</view>
+
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+
+<view class="title">From application-simulate log in [JS file]</view>
+<view class="demo-box">
+    <form bindsubmit="onSubmit1" bindreset="onReset1">
+        <input name="username" type="text" placeholder="Please enter the username: "></input>
+        <input name="password" password placeholder="Please enter the password: "></input>
+        <button size="mini" form-type="submit">Submit</button>
+        <button size="mini" form-type="reset">Reset</button>
+    </form>
+</view>
+
+
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+
+<view class="title">6. Picker application [JS file]</view>
+<view class="title">1. Normal Picker</view> 
+<picker mode='selector' range='{{selectorItems}}' bindchange='selectorChange'>
+     <view>Current choice：{{selector}}</view>
+</picker>
+<view class="title">2. Multiple column selector</view>
+<picker mode='multiSelector' range='{{multiSelectorItems}}' bindchange='multiSelectorChange'>
+    <view>Current choice：{{multiSelector}}</view>
+</picker>
+<view class="title">3. Time Picker</view> 
+<picker mode='time' bindchange='timeChange'>
+    <view>Current choice：{{time}}</view>
+</picker>
+<view class="title">4. Date Picker</view> 
+<picker mode='date' bindchange='dateChange'>
+    <view>Current choice：{{date}}</view>
+</picker>
+<view class="title">5. Province/ City selector</view> 
+<picker mode='region' bindchange='regionChange'>
+    <view>current choice: {{region}}</view>
+</picker>
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+<view class="title">7. Picker view application today's menu [JS file]</view>
+<view class="demo-box">
+    <view class="title">{{menu}}</view>
+    <picker-view value="{{value}}" indicator style="height: 50px;"bindchange='pickerviewchange'>
+        <picker-view-column>
+            <view class="col" wx:for="{{soup}}" wx:key='s{{index}}'>{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+            <view class="col" wx:for="{{maincourse}}" wx:key='s{{index}}'>{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+            <view class="col" wx:for="{{tea}}" wx:key='s{{index}}'>{{item}}</view>
+    </picker-view-column>
+    </picker-view>
+</view>
+
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+<radio-group>
+    <radio value='watermelon' checked />watermelon
+    <radio value='orange' disabled />orange
+    <radio value='strawberry' />strawberry
+    <radio value='pineapple' />pineapple
+</radio-group>
+
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+
+<view class="title">Radio application using array to generate options</view>
+<radio-group bindchange="radioChange">
+    <view wx:for="{{radioItems}}" wx:key='item{{index}}'>
+        <radio value="{{item.value}}" checked="{{item.checked}}" />{{item.name}}
+    </view>
+</radio-group>
+
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+<view class="title">Slider application</view>
+<view class="demo-box">
+    <view class="title">(1) Show the value on the right</view>
+    <slider min="0" max="100" value="45" step="5" show-value/>
+    <view class="title">(2) Customized color</view>
+    <slider min="0" max="100" value="35" block-size="25" block-color="blue" activeColor="greenyellow"/>
+    <view class="title">(3) Disabled slider</view>
+    <slider min="0" max="100" value="65" disabled/>
+    <view class="title">(4) Slider event</view>
+    <slider min="0" max="100" value="85" bindchange="sliderChange" />
+</view>
+
+
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+<view class="title">10. Switch selector switch</view>
+<view class="demo-box">
+    <switch checked/>Checked
+    <switch />Unchecked
+</view>
+
+
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+<view class="title">11. Switch application</view>
+<view class="demo-box">
+
+    <switch checked bindchange="switchChange" />Test
+</view>
+
+<view>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+<view class="title">Textarea application</view>
+<view class="demo-box">
+    <view class="title">(1) autoheight</view>
+    <textarea auto-height placeholder="by fault only one line, but auto adjusted"/>
+    <view class="title">(2) customized placeholder color</view>
+    <textarea placeholder="The color of the placeholder is red" placeholder-style="color:red;"/>
+    <view class="title">(3) Disabled</view>
+    <textarea placeholder="This textarea is disabled" disabled/>
+   
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

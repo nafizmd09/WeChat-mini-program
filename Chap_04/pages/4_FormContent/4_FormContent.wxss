@@ -1,0 +1,15 @@
+/* pages/4_FormContent/4_FormContent.wxss */
+button{
+    margin: 10rpx;
+}
+picker-view{
+    width: 100%;
+    height: 300px;
+}
+.col{
+    line-height: 50px;
+}
+textarea{
+    width: 100%;
+    border: 1rpx solid green;
+}

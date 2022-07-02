@@ -1,0 +1,11 @@
+<!--pages/Chap_04/Chap_04.wxml-->
+<text>pages/Chap_04/Chap_04.wxml</text>
+
+
+<view wx:for="{{array}}" wx:for-item="i">
+ <view wx:for="{{array}}" wx:for-item="j">
+ <view wx:if="{{i <= j}}">
+ {{i}} * {{j}} = {{i * j}}
+ </view>
+ </view>
+ </view>

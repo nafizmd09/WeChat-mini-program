@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/logout/logout",
+    "pages/aboutme/aboutme"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#00FF00",
+    "navigationBarTitleText": "Good morning",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "postion":"top",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Nafiz-Homepage",
+        "iconPath": "/images/home_icon.png",
+        "selectedIconPath": "/images/_home_icon.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "Imtiaz-Login",
+        "iconPath": "/images/login_icon.jpg",
+        "selectedIconPath": "/images/_login_icon.png"
+      },
+      {
+        "pagePath": "pages/logout/logout",
+        "text": "Uddin-Out",
+        "iconPath": "/images/logout_icon.png",
+        "selectedIconPath": "/images/_logout_icon.png"
+      },
+      {
+        "pagePath": "pages/aboutme/aboutme",
+        "text": "JXUST-About",
+        "iconPath": "/images/aboutme_icon.png",
+        "selectedIconPath": "/images/_aboutme_icon.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/Chap_03/Chap_03",
+    "pages/Chap_04/Chap_04",
+    "pages/Chap_05/Chap_05",
+    "pages/Chap_06/Chap_06"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#00FF00",
+    "navigationBarTitleText": "Good morning",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Homepage",
+        "iconPath": "/images/home_icon.png",
+        "selectedIconPath": "/images/_home_icon.png"
+      },
+      {
+        "pagePath": "pages/Chap_03/Chap_03",
+        "text": "Chapter 03",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/Chap_04/Chap_04",
+        "text": "Chapter 04",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/Chap_05/Chap_05",
+        "text": "Chapter 05",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/Chap_06/Chap_06",
+        "text": "Chapter 06",
+        "iconPath": "",
+        "selectedIconPath": ""
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

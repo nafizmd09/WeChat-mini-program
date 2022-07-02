@@ -1,0 +1,134 @@
+/**xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx**/
+/**1.view container **/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.view_parent{
+  width: 100%;
+  height: 300rpx;
+  background-color: lightseagreen;
+}
+.view_son{
+  width: 50%;
+  height: 150rpx;
+  margin-left: 25%;
+  margin-top:50rpx;
+  background-color: lightgray;
+}
+.view_hover{
+  background-color:red;
+}
+
+/**xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx**/
+/**2.view container scroll view**/
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+
+.view_parent{
+  width: 100%;
+  height: 300rpx;
+  background-color: lightseagreen;
+}
+.view_son{
+  width: 50%;
+  height: 150rpx;
+  margin-left: 25%;
+  margin-top:50rpx;
+  background-color: lightgray;
+}
+.view_hover{
+  background-color:red;
+}
+scroll-view{
+  width: 100%;
+  height: 300rpx;
+  white-space: nowrap;
+}
+.scroll-item-y{
+  height: 250rpx;
+  line-height: 200rpx;
+  font-size: 25pt;
+  background-color: rgb(191, 202, 209)
+}
+.scroll-item-x{
+  width: 100%;
+  height: 300rpx;
+  line-height: 300rpx;
+  font-size: 25pt;
+  background-color: rgb(211, 102, 102);
+  display: inline block;
+}
+
+/**xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx**/
+/**3.view container characters**/
+
+.swiper-item{
+  height: 250rpx;
+  line-height: 200rpx;
+  background-color: greenyellow;
+  font-size: 25pt;
+}
+.swiper{
+  height: 300rpx;
+}
+
+
+/**xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx**/
+/**4.view container movable view**/
+
+movable-area{
+  width: 150rpx;
+  height: 150rpx;
+  background-color: greenyellow;
+  margin: 0 auto;
+}
+movable-view{
+  background-color: red;
+}
+#mv01,#mv03{
+  width: 50rpx;
+  height: 50rpx;
+}
+#mv02{
+  width: 180rpx;
+  height: 180rpx;
+}
+
+/**xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx**/
+/**5.view container cover view**/
+
+map{
+  width: 100%;
+  height: 600rpx;
+}
+cover-view{
+  width: 200rpx;
+  background-color: lightcoral;
+  margin: 0 auto;
+}
+cover-image{
+  width: 200rpx;
+  height: 100rpx;
+  margin: 0 auto;
+}
